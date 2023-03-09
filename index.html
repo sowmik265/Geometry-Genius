@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <html data-theme="cupcake">
+
+    </html>
+</head>
+
+<body>
+    <Header>
+        <div class="navbar bg-sky-100 p-6 mt-4 mx-auto w-full">
+            <div class="navbar-start block">
+                <h1 class="normal-case text-3xl font-extrabold">Interactive</h1>
+                <h3 class="text-xl font bold font-style: italic text-amber-900">Geometry Genius</h3>
+            </div>
+            <div class="navbar-end">
+
+                <button class="btn bg-blue-600 border-none text-teal-50 px-8 rounded-xl text-xl"
+                    onclick="window.location.href='blog.html';">Blog</button>
+
+            </div>
+        </div>
+    </Header>
+
+    <main>
+        <section class="flex flex-col md:flex-row gap-1">
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-1 w-full md:w-9/12">
+                <div class="card w-full bg-base-100 shadow-xl justify-items-center items-center hover:bg-violet-600">
+                    <figure class="rounded-none mt-4"><img src="images/triangle.png" /></figure>
+                    <div class="card-body ">
+                        <h2 class="text-center normal-case text-2xl font-bold">triangle</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h</p>
+                        <div class="display: flex justify-items-center items-center gap-4 mt-2">
+                            <div class="display: flex gap-2">
+                                <input id="value-field-1" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="b">
+                                <p>cm</p>
+                            </div>
+                            <div class="display: flex gap-2">
+                                <input id="value-field-2" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="h">
+                                <p>cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end mt-2">
+                            <button id="calculation-btn-1" class="btn btn-primary px-24">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card w-full bg-base-100 shadow-xl justify-items-center items-center hover:bg-red-600">
+                    <figure class="rounded-none mt-4"><img src="images/rectangle.png" /></figure>
+                    <div class="card-body ">
+                        <h2 class="text-center normal-case text-2xl font-bold">Rectangle</h2>
+                        <p class="text-center">Area (A) = W x I</p>
+                        <div class="display: flex justify-items-center items-center gap-4 mt-2">
+                            <div class="display: flex gap-2">
+                                <input id="value-field-3" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="W">
+                                <p>cm</p>
+                            </div>
+                            <div class="display: flex gap-2">
+                                <input id="value-field-4" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="I">
+                                <p>cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end mt-2">
+                            <button id="calculation-btn-2" class="btn btn-primary px-24">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card w-full bg-base-100 shadow-xl justify-items-center items-center hover:bg-yellow-600">
+                    <figure class="rounded-none mt-4"><img src="images/parallelogram.png" /></figure>
+                    <div class="card-body ">
+                        <h2 class="text-center normal-case text-2xl font-bold">Parallelogram</h2>
+                        <p class="text-center">Area (A) = b x h</p>
+                        <div class="display: flex justify-items-center items-center gap-4 mt-2">
+                            <div class="display: flex gap-2">
+                                <input id="value-field-5" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="b">
+                                <p>cm</p>
+                            </div>
+                            <div class="display: flex gap-2">
+                                <input id="value-field-6" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="h">
+                                <p>cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end mt-2">
+                            <button id="calculation-btn-3" class="btn btn-primary px-24">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card w-full bg-base-100 shadow-xl justify-items-center items-center hover:bg-lime-600">
+                    <figure class="rounded-none mt-4"><img src="images/rhombus.png" /></figure>
+                    <div class="card-body ">
+                        <h2 class="text-center normal-case text-2xl font-bold">Rhombus</h2>
+                        <p class="text-center">Area (A) =0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <div class="display: flex justify-items-center items-center gap-4 mt-2">
+                            <div class="display: flex gap-2">
+                                <input id="value-field-7" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="d1">
+                                <p>cm</p>
+                            </div>
+                            <div class="display: flex gap-2">
+                                <input id="value-field-8" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="d2">
+                                <p>cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end mt-2">
+                            <button id="calculation-btn-4" class="btn btn-primary px-24">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card w-full bg-base-100 shadow-xl justify-items-center items-center hover:bg-cyan-500">
+                    <figure class="rounded-none mt-4"><img src="images/pentagon.png" /></figure>
+                    <div class="card-body ">
+                        <h2 class="text-center normal-case text-2xl font-bold">Pentagon</h2>
+                        <p class="text-center">Area (A) = 0.5 x p x b</p>
+                        <div class="display: flex justify-items-center items-center gap-4 mt-2">
+                            <div class="display: flex gap-2">
+                                <input id="value-field-9" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="p">
+                                <p>cm</p>
+                            </div>
+                            <div class="display: flex gap-2">
+                                <input id="value-field-10" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="b">
+                                <p>cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end mt-2">
+                            <button id="calculation-btn-5" class="btn btn-primary px-24">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card w-full bg-base-100 shadow-xl justify-items-center items-center hover:bg-pink-600">
+                    <figure class="rounded-none mt-4"><img src="images/ellipse.png" /></figure>
+                    <div class="card-body ">
+                        <h2 class="text-center normal-case text-2xl font-bold">Ellipse</h2>
+                        <p class="text-center">Area (A) = πab</p>
+                        <div class="display: flex justify-items-center items-center gap-4 mt-2">
+                            <div class="display: flex gap-2">
+                                <input id="value-field-11" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="a">
+                                <p>cm</p>
+                            </div>
+                            <div class="display: flex gap-2">
+                                <input id="value-field-12" class="bg-slate-200 w-24 text-center" type="number"
+                                    placeholder="b">
+                                <p>cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end mt-2">
+                            <button id="calculation-btn-6" class="btn btn-primary px-24">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-3/12">
+                <div class="card w-full bg-base-400 shadow-xl h-3/6 mt-12">
+                    <figure class="rounded-none mt-4">
+                        <h2 class="underline text-center text-2xl ">Area Calculation</h2>
+                    </figure>
+                    <div class="card-body">
+
+                        <div>
+                            <ol id="result-container" class=" mt-4 list-decimal">
+
+                            </ol>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="calculation.js"></script>
+</body>
+
+</html>
